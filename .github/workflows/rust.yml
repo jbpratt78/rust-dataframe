@@ -9,6 +9,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
+    - uses: harmon758/postgresql-action@v1
+      with:
+        postgresql version: '11' 
     - uses: actions-rs/toolchain@v1
       with:
         toolchain: nightly
